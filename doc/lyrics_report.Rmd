@@ -26,12 +26,13 @@ library(syuzhet)
 library(radarchart)
 ```
 
+
 ```{r load data, warning=FALSE, message=FALSE}
 # load lyrics data
-load('./output/processed_lyrics.RData') 
+load('../output/processed_lyrics.RData') 
 ```
 
-![ ](./figs/lovesong.jpg)
+![ ](../figs/lovesong.jpg)
 
 ```{r Preparations, warning=FALSE, message=FALSE}
 time_list <- c("1970s", "1980s", "1990s", "2000s", "2010s")
@@ -227,7 +228,6 @@ tf_tim_1970 = tf_tim_result %>%
 #layout(matrix(c(1,2), 1, 2, byrow = TRUE))
 wordcloud(tf_tim_1970$word, tf_tim_1970$tf, colors = brewer.pal(9,"RdBu"))
 ```
-
 ```{r, warning=FALSE, message=FALSE}
 tfidf_tim_1970 = tf_idf_tim_result %>% 
   filter(times == "1970s") %>%
@@ -252,7 +252,6 @@ tf_tim_1980 = tf_tim_result %>%
 
 wordcloud(tf_tim_1980$word, tf_tim_1980$tf, colors = brewer.pal(9,"RdBu"))
 ```
-
 ```{r, warning=FALSE, message=FALSE}
 tfidf_tim_1980 = tf_idf_tim_result %>% 
   filter(times == "1980s") %>%
@@ -277,7 +276,6 @@ tf_tim_1990 = tf_tim_result %>%
 
 wordcloud(tf_tim_1990$word, tf_tim_1990$tf, colors = brewer.pal(9,"RdBu"))
 ```
-
 ```{r,  warning=FALSE, message=FALSE}
 tfidf_tim_1990 = tf_idf_tim_result %>% 
   filter(times == "1980s") %>%
@@ -302,7 +300,6 @@ tf_tim_2000 = tf_tim_result %>%
 
 wordcloud(tf_tim_2000$word, tf_tim_2000$tf, colors = brewer.pal(9,"RdBu"))
 ```
-
 ```{r, warning=FALSE, message=FALSE}
 tfidf_tim_2000 = tf_idf_tim_result %>% 
   filter(times == "2000s") %>%
@@ -316,7 +313,7 @@ wordcloud(tfidf_tim_2000$word, tfidf_tim_2000$tf_idf, colors = brewer.pal(9,"RdB
 
 $2010S$
 
-```{r 2010, warning=FALSE, message=FALSE, fig.height= 50}
+```{r 2010, warning=FALSE, message=FALSE}
 #2010S
 tf_tim_2010 = tf_tim_result %>% 
   filter(times == "2010s") %>%
@@ -326,7 +323,6 @@ tf_tim_2010 = tf_tim_result %>%
 
 wordcloud(tf_tim_2010$word, tf_tim_2010$tf, colors = brewer.pal(9,"RdBu"))
 ```
-
 ```{r, warning=FALSE, message=FALSE}
 tfidf_tim_2010 = tf_idf_tim_result %>% 
   filter(times == "2010s") %>%
@@ -488,6 +484,6 @@ For R&B and Jazz "love" songs, they have the highest proportions of joy. jazz al
 
 * Important words in lyrics of "love" songs vary a lot among 1970-1989 and 2000-2019. Song writers in old times prefer writing romantic love story, while nowadays song writers prefer talking about their true feelings.
 
-*If someone wants to fit in the new ara of love songs, maybe she/he can write a sad love story song.
+* If someone wants to fit in the new ara of love songs, maybe she/he can write a sad love story song.
 
 * Different genres of song writers have difference preferences for telling what kind of love story. For Jazz love songs, happy is most common For Hip-Hop, anger is more common.
