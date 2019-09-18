@@ -2,17 +2,17 @@
 ## Fall 2019
 ## Project 1: A "data story" on the songs of our times
 
-<img src="figs/title1.jpeg" width="500">
+<img src="./figs/lovesong.jpg" width="500">
 
 ### [Project Description](doc/)
 This is the first and only *individual* (as opposed to *team*) this semester. 
 
 Term: Fall 2019
 
-+ Projec title: Lorem ipsum dolor sit amet
-+ This project is conducted by [your name]
++ Projec title: What Do We Sing About When We Sing About Love
++ This project is conducted by Kangkang Zhang
 
-+ Project summary: [a short summary] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ Project summary: The project provides some exploratory data analysis for "Love" Song, that is, song with lyrics contain "love" more than once. Compare the chracteristics of "love" song lyrics among different music genres and different decades. Apply sentiment analysis to explore the love song story emotion trend as time goes by.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
